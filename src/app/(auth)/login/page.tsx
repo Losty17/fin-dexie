@@ -77,7 +77,7 @@ export default function Login() {
                   </InputOTPGroup>
                 </InputOTP>
               )
-            )
+            ),
         )}
         <Button className="w-full" onClick={() => ui.onSubmit(params)}>
           {t("sign-in")}

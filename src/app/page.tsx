@@ -46,6 +46,7 @@ export default function Home() {
       <button className="btn btn-primary" onClick={handleAddTransacton}>
         Add Transaction
       </button>
+
       <div className="grid grid-cols-3 gap-4">
         {transactions.map((transaction) => (
           <div className="p-4 border border-zinc-100" key={transaction.id}>

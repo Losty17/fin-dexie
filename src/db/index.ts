@@ -23,7 +23,7 @@ class FinDexie extends Dexie {
 
     this.cloud.configure({
       databaseUrl: process.env.NEXT_PUBLIC_DEXIE_CLOUD_URL || "",
-      requireAuth: true,
+      requireAuth: false,
       customLoginGui: true,
     });
   }

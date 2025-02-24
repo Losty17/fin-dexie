@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import I18nProvider from "../lib/providers/I18nProvider";
+import AppBar from "@/components/app/app-bar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,16 @@ export default function RootLayout({
   return (
     <I18nProvider>
       <html lang="en">
-        <body className="max-w-lg min-h-screen m-auto">{children}</body>
+        <head>
+          <script
+            src="https://kit.fontawesome.com/023ee49cbe.js"
+            crossOrigin="anonymous"
+          ></script>
+        </head>
+        <body className="max-w-lg min-h-screen m-auto">
+          {children}
+          <AppBar />
+        </body>
       </html>
     </I18nProvider>
   );
